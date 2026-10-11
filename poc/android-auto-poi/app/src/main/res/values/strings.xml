@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BAuto POI PoC</string>
+    <string name="phone_intro">BAuto POI PoC (sviluppo).\n\nApri l’app dal launcher di Android Auto / DHU. I punti e le commissioni mostrati sono esempi fittizi: non usarli per la navigazione reale.\n\nNessun microfono, account o dato di posizione viene acquisito in questa versione.</string>
+</resources>

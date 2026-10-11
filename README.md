@@ -1,24 +1,32 @@
 # BAuto
 
-Assistente contestuale orientato all'uso in automobile, progettato per
-interazioni prevalentemente vocali e a bassissima distrazione.
+BAuto è un assistente contestuale per l'automobile, con un'interazione prevalentemente vocale e a minima distrazione.
 
-## Stato
+## Principio
 
-Baseline iniziale dei requisiti raccolti il 5 ottobre 2026.
+**Capture first, organize later.** La registrazione immediata durante la guida e l'organizzazione successiva con AI sono obiettivi di prodotto, non funzionalità già approvate per Android Auto.
 
-## Principio guida
+## Stato (2026-10-11)
 
-**Capture first, organize later.**
+Milestone **M0 — Research & Feasibility**. TASK-001 e TASK-003 hanno completato la ricerca documentale; TASK-002 e i PoC runtime restano aperti.
 
-Durante la guida l'utente deve poter catturare un pensiero o formulare
-una richiesta con interazione nulla o minima. Classificazione, tagging e
-organizzazione possono avvenire successivamente tramite LLM.
+**La categoria Android Auto POI non autorizza automaticamente memo vocali generici o project management.** La distribuzione Play richiede verifica del prodotto reale e dei criteri PC-1/PF-1.
 
-## Documenti
+## Repository
 
--   `01-vision-requisiti.md` --- vision e requisiti emersi.
--   `02-android-auto-spike.md` --- vincoli e domande tecniche da
-    verificare.
--   `03-backlog-idee.md` --- idee, questioni aperte e prossimi
-    approfondimenti.
+- [Stato progetto](PROJECT-STATUS-2026-10-11.md)
+- [Master Plan](agentic/planning/MASTER_PLAN.md)
+- [Backlog](agentic/planning/BACKLOG.md)
+- [Task index](agentic/tasks/INDEX.md)
+- [Policy & distribution](agentic/research/findings/policy-distribution.md)
+- [ADR](agentic/architecture/adr/)
+- [Research findings](agentic/research/findings/)
+- [POC-AA-001 — Android Auto POI](poc/android-auto-poi/README.md)
+
+## PoC
+
+Un prototipo Kotlin/Gradle minimale è disponibile in `poc/android-auto-poi`. Usa luoghi e commissioni **dimostrativi/fittizi**, nessuna acquisizione GPS e nessun microfono; non è pronto per Google Play.
+
+## Versionamento
+
+GitHub è la fonte autorevole. Usare branch/PR per modifiche, registrare fonti e test eseguiti; non promuovere ADR a Accepted senza gate espliciti.
