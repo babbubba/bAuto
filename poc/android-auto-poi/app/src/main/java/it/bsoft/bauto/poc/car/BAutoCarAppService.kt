@@ -24,6 +24,9 @@ class BAutoCarAppService : CarAppService() {
                 .build()
         }
 
+    // The no-arg override remains necessary for older car hosts (Car API 5).
+    override fun onCreateSession(): Session = BAutoSession()
+
     override fun onCreateSession(sessionInfo: SessionInfo): Session = BAutoSession()
 }
 
